@@ -1,0 +1,138 @@
+// Version 1.0 pronto modificaremos a MarkDown
+
+# Git commands
+
+**git —version** (*Show current git version installed on your OS*)
+
+**git config —global [user.name](http://user.name)** (*Command to assign a username or name to your Git)*
+
+**git config —global [user.name.email](http://user.name.email) (***Command too assign a email to your Git***)**
+
+**git config —global core.editor “code —wait”** (*Assign your code editor, like VS Code, and wait until it’s closed*)
+
+**git config —global -e** (If u want to look up your global documentation file)
+
+**git config —global core.autocrlf true (***validate the Carriage Return (CR) and Line Feed (LF) on your Git / Windows OS)
+**git config -h** (Shows the list for all commands for Git shell)*
+
+**CTRL + L** (*Cleans the Bash terminal*)
+
+**ls (***Shows you all your folders and files within the user)*
+
+**pwd** (*Shows you the exact rute where you are*)
+
+**cd** (To enter inside the directories)
+
+**cd ..** (To leave a directory)
+
+**mkdir** (*To create a new folder in the route*)
+
+**ls -a** (*Shows the hidden files inside the directory*)
+
+**code .** (*Opens the code editor in the directory we are*)
+
+**git status** (*It shows us the current state of our repository*)
+
+**git add** (*file name we want to add*), ****(**.**txt** adds all files that have the extension **.txt**, **.** (dot) all files that appear within the git status list or that appear in red*)
+
+**git commit -m “(***A real thing that makes sense***)” ~ git commit ENTER > FILE IN THE EDITOR**
+
+**git rm “filename”** (*Delete the file inserted*)
+
+**git restore —staged “file”** (*Let the file unstage*)
+
+**git restore “filename”** (*Restore the file delete*)
+
+**mv “filename” “new filename”** (*Change the file name*)
+
+**git add “old file” “new file”** (*This is to add the new filename to stage and commited*)
+
+**git mv “filename” “new filename”** (*To add the new file to staged, renamed and adding at the same time*)
+
+**.gitignore** (*A file to ignore files and routes*)
+
+**git status -s** (*A clean version of **git status***)
+
+**git diff (***Shows the modified lines in the file***)**
+
+**git diff --staged (***Show us the modified file in the staged***)**
+
+**git log ~ git log —online** (*Shows the history of our bash ~ History in one line*)
+
+**git branch** (*Shows the branch where we located*)
+
+**git checkout -b branchname** (*Allow to switch a new branch*)
+
+**cat *filename*** (*Show all the content of our file*)
+
+**git merge *branchname*** (*Take the file from the branchname to the branch you’re located*)
+
+**git rebase *branchname** (Rebasing is the process of moving or combining a sequence of commits to a new base commit.)*
+
+**Github connection with Git**
+
+**git remote** (*Allow us to create a git remote to save the changes remotly*)
+
+**git remote add origin URL**
+
+**git push -u origin *branchname* (***With the token key***)**
+
+To create another branch, not the main/master, where we can modified or make the changes of our files and upload to the repository:
+**git checkout -b *newbranch*
+git push -u origin *newbranch***
+
+
+"- git init" Comando que se ejecuta una única vez cuando queremos que git comience a hacer un seguimiento del proyecto(es como decir en este proyecto voy a empezar a utilizar git).
+
+"- git add <file>" Es para poder pasar los archivos del Working directory al Staging área.
+
+"- git status" Para ver en qué estado están tus archivos, si están en el Working directory, si están en el Staging área, etc.
+
+"- git commit" Es para pasar los archivos del Staging área al Repository, (crear una foto de tu versión de código).
+
+"- git push" Subir tu código a un repositio remoto.
+
+"- git pull" En caso estés trabajando con otros desarrolladores te traes los cambios de otros desarrolladores.
+
+"- git clone" Hacerte una copia desde el servidor central donde está el código a tu computador para que empieces a trabajar.
+
+
+//archivo ".gitignore" : archivo donde se pondrá el nombre de las carpetas o archivos individuales que se quiere evitar que git las omita.
+
+
+- "Working directory"
+Directorio de trabajo, una carpeta donde se almacenan los archivos de nuestro proyecto.
+
+        
+    - "git init"
+
+    - "git status" Para ver en qué estado están tus archivos, si los cambios fueron hechos y no hay nada que hacer, o los archivos están en el Working directory, si están en el Staging área, etc.
+
+    - "git add <file>": git add (*file name we want to add*), ****(**.**txt** adds all files that have the extension **.txt**, **.** (dot) all files that appear within the git status list or that appear in red*)
+
+    - "git add ." (dot) all files that appear within the git status list or that appear in red*)
+    
+
+- "Staging área"
+Área de ensayo, donde se almacenarán los archivos de manera temporal, donde podremos ver que archivos tienen y no seguimiento por parte de git y en qué estado se encuentra cada uno de esos archivos.
+
+    - "git commit": Es para pasar los archivos del Staging área al Repository/Repositorio local, (crear una foto de tu versión de código). a través del IDE por defecto.
+
+    - "git commit -m <nombreDelCommit>" : Se genera la instantanea sin necesidad de abrir el IDE. ///COMANDO MÁS COMÚN
+        
+- "Repository"
+Repositorio local, donde se almacenan las copias que hace git de nuestros archivos
+
+    - "git log" : Muestra de forma detalla los commits que hemos creado (Shows the history of our bash)
+
+    - "git checkout -- <file>" : revierte los cambios del archivo (Ctrl Z?)
+
+    - "git diff" <file> : Para ver las diferencias hechas en los archivos. (Lo rojo muestra las lineas eliminadas y verdes lineas agregadas)
+
+    - "git branch" : Muestra las ramas del proyecto, resaltando en la que estemos.
+
+    - "git branch <nombre>" : Crea una rama adicional en el proyecto
+
+    - "git checkout <branchName>" : Cambiamos de rama a la selecionada
+
+
